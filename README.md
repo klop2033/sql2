@@ -33,7 +33,7 @@ HAVING COUNT(customer.customer_id) > 300;
 ### Ответ
 
 ```sql
-SELECT COUNT(*) AS srdfilm
+SELECT COUNT(*) AS srd
 FROM film
 WHERE length > (SELECT AVG(length) FROM film);
 ```
